@@ -1,1 +1,2 @@
-ls -1Ap | sort -k1.1 | tr '\n' ',' && echo
+#!/bin/bash
+ls -1Ap | sort -k1.1 | tr n , && echo
