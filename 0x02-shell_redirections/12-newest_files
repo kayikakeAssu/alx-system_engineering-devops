@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -lt | grep '^-' | head -n 10 | cut -d ' ' -f 10-
