@@ -1,7 +1,2 @@
 #!/bin/bash
 find . \( -type f -empty -printf "%P\n" \) -o \( -type d -empty -printf "%P\n" \)
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 92a4afc... 100-empty_casks21
