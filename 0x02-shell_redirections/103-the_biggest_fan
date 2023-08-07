@@ -1,0 +1,2 @@
+#!/bin/bash
+while read -r line; do host=$(echo "$line" | cut -f1); ((hosts[$host]++)); done < web_server_logs.tsv; for host in "${!hosts[@]}"; do echo "$host ${hosts[$host]}"; done | sort -k2nr | head -n 11
