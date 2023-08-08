@@ -1,2 +1,0 @@
-#!/bin/bash
-echo "$(find -depth ${PATH//:/ -type d | wc -l})"
