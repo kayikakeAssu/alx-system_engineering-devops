@@ -40,11 +40,11 @@ frontend  mbula-frontend-http
         default_backend mbula-backend
 
 frontend mbula-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/www.ehoneah.tech.pem
+	bind *:443 ssl crt /etc/haproxy/certs/www.assurancembula.me/portfolio/
 	http-request set-header X-Forwarded-Proto https
 	default_backend mbula-backend
 
 backend ehoneah-backend
         balance roundrobin
-        server 491244-web-01 100.25.19.204:80 check
-        server 491244-web-02 54.157.159.85:80 check
+        server 491244-web-01 3.85.175.202:80 check
+        server 491244-web-02 100.25.138.234:80 check
