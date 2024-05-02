@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-# write a script that will display info about the subdomains
 
 dns_config () {
     script=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
